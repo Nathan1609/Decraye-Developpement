@@ -1,0 +1,38 @@
+DECRAYE DÉVELOPPEMENT — DOSSIER DU SITE
+======================================
+
+STRUCTURE
+  index.html                          Page d'accueil
+  mentions-legales.html               Mentions légales
+  politique-de-confidentialite.html   Politique de confidentialité (RGPD)
+  404.html                            Page d'erreur
+  robots.txt / sitemap.xml            Fichiers SEO
+  .htaccess                           HTTPS, compression, cache, sécurité (Hostinger)
+  favicon.ico
+  asset/css/style.css                 Styles du site (variables de couleurs en haut : :root)
+  asset/css/legal.css                 Styles des pages légales et 404
+  asset/js/main.js                    Animations, menu, formulaire de contact
+  asset/img/                          Images (WebP) et icônes
+  asset/fonts/                        Polices hébergées en local (aucun appel à Google)
+
+OUVRIR EN LOCAL (VS Code)
+  1. Ouvrir le dossier dans VS Code.
+  2. Installer l'extension « Live Server », puis clic droit sur index.html > Open with Live Server.
+  3. Formater un fichier : Maj + Alt + F.
+
+À COMPLÉTER AVANT LA MISE EN LIGNE
+  Rechercher « À compléter » dans mentions-legales.html et politique-de-confidentialite.html :
+  forme juridique, numéro BCE, numéro de TVA, fournisseur d'e-mail, durée de conservation.
+  Puis remplacer les 3 témoignages (index.html, section #temoignages), qui sont fictifs.
+  Les captures du portfolio sont dans asset/img/projet-*.webp.
+
+MISE EN LIGNE (Hostinger)
+  hPanel > Fichiers > Gestionnaire de fichiers > public_html
+  Envoyer le CONTENU du dossier (pas le dossier lui-même) : index.html et asset/ doivent être à la racine.
+  Ne pas oublier .htaccess (fichier caché : activer « afficher les fichiers cachés »).
+  Ensuite : envoyer https://decrayedeveloppement.be/sitemap.xml dans Google Search Console.
+
+NOTES
+  - Le formulaire de contact ouvre la messagerie du visiteur (mailto). Pour un envoi direct,
+    utiliser un service (FormSubmit, Formspree) ou un script PHP, et mettre à jour la politique de confidentialité.
+  - Si vous renommez une page ou ajoutez-en, pensez à mettre à jour sitemap.xml.

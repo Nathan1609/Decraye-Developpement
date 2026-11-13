@@ -1,0 +1,166 @@
+/* Pages légales et 404 */
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url(../fonts/bricolage-grotesque.woff2) format("woff2");
+  font-weight: 200 800;
+  font-display: swap
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url(../fonts/hanken-grotesk.woff2) format("woff2");
+  font-weight: 100 900;
+  font-display: swap
+}
+
+:root {
+  --bg: #0F1318;
+  --bg2: #151A21;
+  --ink: #EDEBE6;
+  --mute: #98A0AA;
+  --line: #262C35;
+  --brass: #C9A56B;
+  color-scheme: dark
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 1.0625rem/1.7 "Hanken Grotesk", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased
+}
+
+h1,
+h2 {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  margin: 0
+}
+
+a {
+  color: inherit;
+  text-decoration: none
+}
+
+.wrap {
+  width: min(1180px, 100% - 2.5rem);
+  margin-inline: auto
+}
+
+.top {
+  border-bottom: 1px solid var(--line)
+}
+
+.top .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px
+}
+
+.top img {
+  height: 46px;
+  width: auto
+}
+
+.back {
+  color: var(--mute)
+}
+
+.back:hover {
+  color: var(--brass)
+}
+
+main {
+  padding: clamp(3rem, 8vw, 6rem) 0
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 2rem 0;
+  color: var(--mute);
+  font-size: .92rem
+}
+
+:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 4px
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  background: var(--ink);
+  color: #111;
+  padding: .85rem 1.5rem;
+  border-radius: 99px;
+  font-weight: 600
+}
+
+.btn:hover {
+  background: var(--brass)
+}
+
+.ld {
+  max-width: 780px;
+  margin-inline: auto
+}
+
+.ld .lt {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: .6rem
+}
+
+.ld .up {
+  color: var(--mute);
+  font-size: .92rem;
+  margin-bottom: 2rem
+}
+
+.ld .ls {
+  font-size: 1.35rem;
+  margin: 2.2rem 0 .8rem;
+  color: var(--ink)
+}
+
+.ld p,
+.ld li {
+  color: #C9CDD3;
+  max-width: none
+}
+
+.ld p {
+  margin-top: .8rem
+}
+
+.ld ul {
+  margin: .6rem 0 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: .5rem
+}
+
+.ld a {
+  color: var(--brass);
+  border-bottom: 1px solid #C9A56B66
+}
+
+.ld a:hover {
+  border-color: var(--brass)
+}
+
+.todo {
+  background: #C9A56B26;
+  color: var(--brass);
+  padding: 0 .35em;
+  border-radius: 4px
+}
+.ld[style] p {
+  margin-inline: auto;
+}
